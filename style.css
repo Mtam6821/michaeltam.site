@@ -1,0 +1,31 @@
+
+.sidebar {
+  width: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float:  right;
+  font-size: large;
+  background-color: lightgray;
+  white-space: normal;
+}
+ul {
+  background-color: lightgray;
+  width: fit-content;
+}
+p {
+  font-size: large;
+}
+li {
+  font-size: large;
+}
+.grid {
+  background-color: lightgray;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+.grid-item {
+  background-color: lightgray;
+  font-size: large;
+  text-align: center;
+}
+
