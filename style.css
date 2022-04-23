@@ -25,7 +25,10 @@ li {
 }
 .grid-item {
   background-color: lightgray;
-  font-size: large;
-  text-align: center;
+  font-size: medium;
+  text-align: left;
+}
+.grid .grid-item h4 {
+  text-align: left;
 }
 
