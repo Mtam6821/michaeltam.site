@@ -1,6 +1,7 @@
 <?php
 echo "Cache-Control: no-cache\n";
-echo "Content-type: text/html\n\n";
+echo "Content-type: text/html \n\n";
+
 echo "<html>";
 echo "<head>";
 echo "<title>Hello, PHP!</title>";

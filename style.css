@@ -31,4 +31,7 @@ li {
 .grid .grid-item h4 {
   text-align: left;
 }
+.grid .grid-item li a.href {
+  text-align: left;
+}
 
