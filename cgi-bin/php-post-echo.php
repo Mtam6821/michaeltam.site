@@ -8,7 +8,7 @@ echo '<!DOCTYPE html>
 echo "Message body: ";
 if (count($_POST) > 0) {
     foreach ($_POST as $key => $value) {
-        echo htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
+        echo htmlspecialchars($key)." = ".htmlspecialchars($value)."<br>";
     }
 }
 
