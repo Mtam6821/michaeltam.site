@@ -1,5 +1,10 @@
 <?php
+session_start();
 
+if (isset($_POST["username"])) {
+  $_SESSION["username"] = $_POST["username"];
+  header("Location:php-sessions-1.php");
+}
 ?>
 
 <!doctype html>
@@ -13,7 +18,7 @@
   <h1 align="center">Session Test</h1>
   <hr>
   <label for="cgi-lang">CGI using PHP</label>
-  <form action="/cgi-bin/php-sessions-1.php" method="Post" id="form">
+  <form action="/cgi-bin/php-cgiform.php" method="Post" id="form">
     <label>What is your name? <input type="text" name="username" autocomplete="off"></label>
     <br>
     <input type="submit" value="Test Sessioning">

@@ -5,7 +5,7 @@ session_destroy();
 
 print "<html>";
 print "<head>";
-print "<title>Perl Session Destroyed</title>";
+print "<title>PHP Session Destroyed</title>";
 print "</head>";
 print "<body>";
 print "<h1>Session Destroyed</h1>";

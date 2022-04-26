@@ -1,8 +1,8 @@
 <?php
 session_start();
 $name = "";
-if (isset($POST["username"])) {
-    $name = $_SESSION["name"];
+if (isset($_SESSION["username"])) {
+    $name = $_SESSION["username"];
 }
 else {
     $name = "No name set";
@@ -11,7 +11,7 @@ else {
 
 echo "<html>";
 echo "<head>";
-echo "<title>Perl Sessions</title>";
+echo "<title>PHP Sessions</title>";
 echo "</head>";
 echo "<body>";
 
