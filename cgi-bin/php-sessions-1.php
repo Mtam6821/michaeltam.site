@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $name = "";
 if (isset($POST["username"])) {
     $name = $_SESSION["name"];
@@ -22,7 +22,7 @@ echo "<p><b>Name:</b> $name";
 echo "<br/><br/>";
 echo "<a href=\"/cgi-bin/php-sessions-2.php\">Session Page 2</a><br/>";
 echo "<a href=\"/cgi-bin/php-cgiform.php\">PHP CGI Form</a><br />";
-echo "<form style=\"margin-top:30px\" action=\"/cgi-bin/php-destroy-session.pl\" method=\"get\">";
+echo "<form style=\"margin-top:30px\" action=\"/cgi-bin/php-destroy-session.php\" method=\"get\">";
 echo "<button type=\"submit\">Destroy Session</button>";
 echo "</form>";
 
