@@ -17,7 +17,7 @@ if (strlen($query_str) > 0) {
     foreach ($pairs as $pair) {
         $kvpair = preg_split("/=/", $pair);
         list($key, $val) = $kvpair;
-        echo "$key = $vale<br/>\n";
+        echo "$key = $val<br/>\n";
     }
 }
 echo "</body></html>";
