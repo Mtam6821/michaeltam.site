@@ -12,11 +12,11 @@ print ("<!DOCTYPE html>" +
 "<hr>")
 
 full_query = os.getenv("QUERY_STRING", "")
-print ("Query String: " + full_query + "\n")
+print ("Query String: " + full_query + "<br>")
 
 query_dict = dict(parse.parse_qsl(full_query))
 for key in list(query_dict):
-    print ("<b>" + key + "</b>: " + query_dict[key] + "\n")
+    print ("<b>" + key + "</b>: " + query_dict[key] + "<br>")
 
 print("</body></html>")
 

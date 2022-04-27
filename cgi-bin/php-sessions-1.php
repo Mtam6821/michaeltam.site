@@ -7,8 +7,8 @@ if ($_POST["username"] != "" && $_POST["username"] != "destroyed") {
     $name = $_POST["username"];
     header("Set-Cookie: $name\n\n");
 }
-else if (getenv("HTTP_COOKIE") != ""){
-    $name = getenv("HTTP_COOKIE");
+else if ($_COOKIE["username"] != "" && $_COOKIE["username"] != "destroyed") {
+    $name = $_COOKIE["username"];
 }
 else {
     $name = "No name set";
@@ -21,7 +21,7 @@ echo "<title>PHP Sessions</title>";
 echo "</head>";
 echo "<body>";
 
-echo "<h1>Perl Sessions Page 1</h1>";
+echo "<h1>PHP Sessions Page 1</h1>";
 
 echo "<p><b>Name:</b> $name";
 

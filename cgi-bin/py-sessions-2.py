@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-import os, sys
+import os, sys, Cookie
 
 
 name = ""
 if (os.environ.get("HTTP_COOKIE") != ""):
     name = os.environ.get("HTTP_COOKIE")
+
     print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
 
 else :

@@ -8,9 +8,9 @@ post_data = sys.stdin.read()
 post_list = post_data.split('&')
 name = ""
 
-if (post_data != "" and post_data != "destroyed"):
-    name = post_data
-    print("Set-Cookie: " + name + "\nCache-Control: no-cache\nContent-type: text/html\n\n")
+if (post_list[0] != "" and post_list[0] != "destroyed"):
+    print("Set-Cookie: " + post_list[0] + "\nCache-Control: no-cache\nContent-type: text/html\n\n")
+    name = (post_list[0]).split('=')[1]
 
 elif (os.environ.get("HTTP_COOKIE") != ""):
     name = os.environ.get("HTTP_COOKIE")

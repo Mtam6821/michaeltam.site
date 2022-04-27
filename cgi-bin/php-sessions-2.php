@@ -3,8 +3,8 @@ header("Cache-Control: no-cache\n") ;
 header("Content-type: text/html \n\n") ;
 
 $name = "";
-if (getenv("HTTP_COOKIE") != "" && getenv("HTTP_COOKIE") != "destroyed") {
-    $name = getenv("HTTP_COOKIE");
+if ($_COOKIE["username"] != "" && $_COOKIE["username"] != "destroyed") {
+    $name = $_COOKIE["username"];
 }
 else {
     $name = "No name set";
@@ -16,7 +16,7 @@ echo "<title>PHP Sessions</title>";
 echo "</head>";
 echo "<body>";
 
-echo "<h1>Perl Sessions Page 2</h1>";
+echo "<h1>PHP Sessions Page 2</h1>";
 
 echo "<p><b>Name:</b> $name";
 

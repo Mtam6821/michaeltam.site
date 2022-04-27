@@ -11,7 +11,7 @@ print ("<!DOCTYPE html>" +
 "<hr>")
 
 for env_var_name in os.environ:
-    print(env_var_name + ": " + os.environ.get(env_var_name) + "\n")
+    print(env_var_name + ": " + os.environ.get(env_var_name) + "<br>")
 
 
 

@@ -15,7 +15,7 @@ print ("<p><b>HTTP Protocol:</b> " + os.getenv("SERVER_PROTOCOL") + "</p>")
 print ("<p><b>HTTP Method:</b> " + os.getenv("REQUEST_METHOD") + "</p>")
 print ("<p><b>Query String:</b> " + os.getenv("QUERY_STRING") + "</p>")
 
-print ("<b>Message Body:</b> <br />\n")
+print ("<b>Message Body:</b> <br />")
 print ("<ul>\n")
 
 post_data = sys.stdin.read()
