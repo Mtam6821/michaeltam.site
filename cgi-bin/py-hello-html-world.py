@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import socket
+import os
 from datetime import datetime
 
 print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
@@ -14,7 +14,7 @@ print("<p>This page was generated with the Python programming langauge</p>")
 
 print("<p>Current Time: " + datetime.now().strftime("%a %b %d %H:%M:%S %Y") + "</p>")
 
-print("<p>Your IP Address: " + socket.gethostbyname(socket.gethostname())  + "</p>")
+print("<p>Your IP Address: " + os.environ.get("REMOTE_ADDR")  + "</p>")
 
 print ("</body>")
 print ("</html>")
