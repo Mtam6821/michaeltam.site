@@ -7,6 +7,9 @@ if ($_POST["username"] != "" && $_POST["username"] != "destroyed") {
     $name = $_POST["username"];
     header("Set-Cookie: $name\n\n");
 }
+else if (getenv("HTTP_COOKIE") != ""){
+    $name = getenv("HTTP_COOKIE");
+}
 else {
     $name = "No name set";
 }
