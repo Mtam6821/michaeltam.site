@@ -5,7 +5,7 @@ header("Content-type: text/html \n\n") ;
 
 echo '<!DOCTYPE html>
 <html><head><title>GET Request Echo</title>
-</head><body><h1 align="center">Get Request Echo</h1>
+</head><body><h1 align="center">GET Request Echo</h1>
 <hr>';
 
 $query_str = getenv('QUERY_STRING');
