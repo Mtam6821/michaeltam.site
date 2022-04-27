@@ -1,10 +1,5 @@
 #!/usr/bin/python
-from posixpath import split
-from urllib import parse
-import requests
 import sys, os
-
-session = requests.session()
 
 post_data = sys.stdin.read()
 post_list = post_data.split('&')
