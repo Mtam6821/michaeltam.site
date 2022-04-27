@@ -1,7 +1,7 @@
 
 <?php
-echo "Cache-Control: no-cache\n";
-echo "Content-type: text/html \n\n";
+header("Cache-Control: no-cache\n") ;
+header("Content-type: text/html \n\n") ;
 
 echo '<!DOCTYPE html>
 <html><head><title>GET Request Echo</title>

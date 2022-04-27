@@ -1,4 +1,7 @@
 <?php
+header("Cache-Control: no-cache\n") ;
+header("Content-type: text/html \n\n") ;
+
 date_default_timezone_set('America/Los_Angeles');
 $date = date('l jS \of F Y h:i:s A');
 

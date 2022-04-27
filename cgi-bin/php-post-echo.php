@@ -1,5 +1,7 @@
 
 <?php
+header("Cache-Control: no-cache\n") ;
+header("Content-type: text/html \n\n") ;
 
 echo '<!DOCTYPE html>
 <html><head><title>POST Request Echo</title>

@@ -1,13 +1,14 @@
 <?php
-session_start();
+header("Cache-Control: no-cache\n") ;
+header("Content-type: text/html \n\n") ;
+
 $name = "";
-if (isset($_SESSION["username"])) {
-    $name = $_SESSION["username"];
+if (getenv("HTTP_COOKIE") != "" && getenv("HTTP_COOKIE") != "destroyed") {
+    $name = getenv("HTTP_COOKIE");
 }
 else {
     $name = "No name set";
 }
-
 
 echo "<html>";
 echo "<head>";

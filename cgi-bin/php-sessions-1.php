@@ -1,8 +1,11 @@
 <?php
-session_start();
+header("Cache-Control: no-cache\n") ;
+header("Content-type: text/html \n\n") ;
+
 $name = "";
-if (isset($_SESSION["username"])) {
-    $name = $_SESSION["username"];
+if ($_POST["username"] != "" && $_POST["username"] != "destroyed") {
+    $name = $_POST["username"];
+    header("Set-Cookie: $name\n\n");
 }
 else {
     $name = "No name set";

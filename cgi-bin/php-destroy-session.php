@@ -1,7 +1,9 @@
 <?php
 
-session_start();
-session_destroy();
+header("Cache-Control: no-cache\n") ;
+header("Content-type: text/html \n\n") ;
+header("Set-Cookie: destroyed\n");
+
 
 print "<html>";
 print "<head>";
