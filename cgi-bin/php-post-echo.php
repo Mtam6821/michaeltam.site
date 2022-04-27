@@ -3,7 +3,7 @@
 
 echo '<!DOCTYPE html>
 <html><head><title>POST Request Echo</title>
-</head><body><h1 align="center">Get Request Echo</h1>
+</head><body><h1 align="center">POST Request Echo</h1>
 <hr>';
 echo "Message body: ";
 if (count($_POST) > 0) {
