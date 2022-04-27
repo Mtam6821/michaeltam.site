@@ -1,10 +1,11 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
 import os
 from urllib import parse
 import sys
 
-print ("Cache-Control: no-cache\n")
-print ("Content-type: text/html \n\n")
+print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
+
 
 # print HTML file top
 print ("<!DOCTYPE html>" +

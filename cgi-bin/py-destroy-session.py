@@ -1,8 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import request
 
-print ("Content-type: text/html\n\n")
+print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
+
 
 session = request.session()
 session.cookies.clear()

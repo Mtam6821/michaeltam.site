@@ -1,7 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
 import socket
 from datetime import datetime
 import json
+print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
 
 my_time = datetime.now().strftime("%a %b %d %H:%M:%S %Y")
 my_ip_addr = socket.gethostbyaddr(socket.gethostname())

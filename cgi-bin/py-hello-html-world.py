@@ -1,9 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import socket
 from datetime import datetime
 
-print ("Cache-Control: no-cache\n")
-print ("Content-type: text/html\n\n")
+print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
 print ("<html>")
 print ("<head>")
 print ("<title>Hello, Python!</title>")

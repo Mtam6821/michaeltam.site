@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
 import sys, os
 
 post_data = sys.stdin.read()
@@ -8,8 +9,8 @@ for kv_pair in post_list:
     if (split_pair[0] == "username"):
         session.cookies.set("username", split_pair[1])
 
-print ("Cache-Control: no-cache\n")
-print ("Content-type: text/html \n\n")
+print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
+
 
 # print HTML file top
 print ("<!DOCTYPE html>")
