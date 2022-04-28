@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-print("Set-Cookie: destroyed\nCache-Control: no-cache\nContent-type: text/html\n\n")
+print("Set-Cookie: username=destroyed\nCache-Control: no-cache\nContent-type: text/html\n\n")
 
 
 print ("<html>")

@@ -2,10 +2,8 @@
 
 import sys, os
 
-from requests import post
-
 post_data = sys.stdin.read()
-post_list = post_data.split('&')
+post_list = post_data.split(';')
 name = ""
 
 if (post_list[0] != "" and post_list[0] != "destroyed"):
@@ -13,7 +11,11 @@ if (post_list[0] != "" and post_list[0] != "destroyed"):
     name = (post_list[0]).split('=')[1]
 
 elif (os.environ.get("HTTP_COOKIE") != ""):
-    name = os.environ.get("HTTP_COOKIE")
+    cookies_string = os.environ.get("HTTP_COOKIE")
+    cookies_list = cookies_string.split(';')
+    name = (cookies_list[0]).split('=')[1]
+    if (name == "destroyed"):
+        name = "No name set"
     print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
 
 else :

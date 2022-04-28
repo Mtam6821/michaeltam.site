@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-import os, sys, Cookie
+import os, sys
 
 
 name = ""
 if (os.environ.get("HTTP_COOKIE") != ""):
-    name = os.environ.get("HTTP_COOKIE")
-
+    cookies_string = os.environ.get("HTTP_COOKIE")
+    cookies_list = cookies_string.split(';')
+    name = (cookies_list[0]).split('=')[1]
+    if (name == "destroyed"):
+        name = "No name set"
     print ("Cache-Control: no-cache\nContent-type: text/html\n\n")
 
 else :
