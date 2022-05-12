@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "test": "foo",
+      "id": 1
+    },
+    {
+      "test": "bar",
+      "id": 2
+    },
+    {
+      "test": "baz",
+      "id": 3
+    },
+    {
+      "test": "baz",
+      "id": 4
+    },
+    {
+      "testing": "hello",
+      "id": 5
+    },
+    {
+      "testing": "hello",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
