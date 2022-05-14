@@ -25,16 +25,12 @@ function init() {
 //sends packet to endpoint with the appropriate type
 async function sendPacket(packet, type) {
     var url = "https://michaeltam.site/json/" + type;
-    var username = "user";
-    var password = "user";
-    var login_str = username + ":" + password
-
-    var local_headers = new Headers();
-    local_headers.append('Authorization', 'Basic ' + Buffer.from(login_str, 'base64'));
-    local_headers.append('Content-Type', 'application/json')
 
     fetch(url , {
-        headers : local_headers,
+        headers : {
+            'Authorization': 'Basic dXNlcjp1c2Vy',
+            'Content-Type': 'application/json'
+        },
         method : 'POST',
         body : JSON.stringify(packet)
     })
