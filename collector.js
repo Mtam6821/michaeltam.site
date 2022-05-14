@@ -20,10 +20,6 @@ init()
 function init() {
     getStaticInfo();
     sendPacket(STATIC_INFO, "static");
-
-    window.addEventListener("click", function() {
-        window.alert("script running");
-    });
 }
 
 //sends packet to endpoint with the appropriate type
@@ -42,6 +38,8 @@ async function sendPacket(packet, type) {
         method : 'POST',
         body : JSON.stringify(packet)
     })
+    .then(response => response.json())
+    .then(data => alert(data));
 }
 
 function getStaticInfo() {
