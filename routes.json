@@ -1,0 +1,4 @@
+{
+    "/posts" : "/posts",
+    "tracking/:category": "/tracking?category=:category"
+}
