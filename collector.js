@@ -18,9 +18,12 @@ const STATIC_INFO = {
 init()
 
 function init() {
-    getStaticInfo()
+    getStaticInfo();
     sendPacket(STATIC_INFO, "static");
-    
+
+    window.addEventListener("click", function() {
+        window.alert("script running");
+    });
 }
 
 //sends packet to endpoint with the appropriate type
